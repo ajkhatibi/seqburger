@@ -18,7 +18,7 @@
     "password": "m6lb93nh07mzfkqg",
     "database": "database_production",
     "host": "127.0.0.1",
-    "use_env_variable": "JAWSDB_URL",
+    "use_env_variable": "mysql://m31oq31u0xx56ksy:m6lb93nh07mzfkqg@o3iyl77734b9n3tg.cbetxkdyhwsb.us-east-1.rds.amazonaws.com:3306/n1wyym4bi7wu5aa4",
     "dialect": "mysql"
   }
 }
