@@ -15,7 +15,10 @@
 				</div>
 				<div class="col-xs-3 text-center">
 					<form method="POST" action="/burgers/update?_method=PUT" class="button-size">
-						<input input type="hidden" type="text" name="burger_id" value={{this.id}}><br>
+						<input input type="hidden" type="text" name="burger_id" value={{this.id}}>
+						<!-- Solution 2 Edit: Added input for a customer name -->
+						<input class="custInput" input type="text" name="customer" placeholder="Customer?"><br>'
+						<!-- end edit -->
 						<button type="submit" class="btn btn-default">Devour it!</button>
 					</form>
 				</div>
@@ -26,7 +29,20 @@
 		<div class="col-xs-6 text-center" class="task">
 			  {{#each burger}}
 			  	{{#if this.devoured}}
-			  		<input class="form-control" type="text" placeholder="{{this.id}} . {{this.burger_name}}" readonly>
+				<!--
+					Solution 2 Edit: If a customer name gets sent with a burger
+					list the customers name
+					-->
+
+			  		{{#if this.Customer.customer}}
+			  			<input class="form-control" type="text" placeholder="{{this.id}} . {{this.burger_name}}  (Eaten by {{this.Customer.customer}}) " readonly>
+					<!--
+					Solution 2 Edit: If there is no customer name,
+					just list the burger.
+						-->
+			  		{{else}}
+			  			<input class="form-control" type="text" placeholder="{{this.id}} . {{this.burger_name}}" readonly>
+			  		{{/if}}
 				{{/if}}
 			  {{/each}}
 		</div>
