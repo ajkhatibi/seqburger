@@ -14,8 +14,11 @@
     "dialect": "mysql"
   },
   "production": {
-
-    "use_env_variable": "mysql://m31oq31u0xx56ksy:m6lb93nh07mzfkqg@o3iyl77734b9n3tg.cbetxkdyhwsb.us-east-1.rds.amazonaws.com:3306/n1wyym4bi7wu5aa4",
+    "username": "kn44018rl0av3s9c",
+    "password": "woedcd0ta8wzd2cu",
+    "database": "database_production",
+    "host": "o3iyl77734b9n3tg.cbetxkdyhwsb.us-east-1.rds.amazonaws.com",
+    "use_env_variable": "mysql://kn44018rl0av3s9c:woedcd0ta8wzd2cu@o3iyl77734b9n3tg.cbetxkdyhwsb.us-east-1.rds.amazonaws.com:3306/qg74qtujuoedeapl",
     "dialect": "mysql"
   }
 }
